@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="414.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalculatorFormController">
+   <TextField fx:id="txtNumberOne" layoutX="32.0" layoutY="42.0" prefHeight="48.0" prefWidth="360.0"
+              promptText="First Number">
+      <font>
+         <Font name="System Bold" size="18.0"/>
+      </font>
+   </TextField>
+   <TextField fx:id="txtNumberTwo" layoutX="32.0" layoutY="113.0" prefHeight="48.0" prefWidth="360.0"
+              promptText="Second Number">
+      <font>
+         <Font name="System Bold" size="18.0"/>
+      </font>
+   </TextField>
+   <Button layoutX="326.0" layoutY="192.0" mnemonicParsing="false" onAction="#mulOnAction" prefHeight="61.0"
+           prefWidth="66.0" text="*">
+      <font>
+         <Font name="System Bold" size="28.0"/>
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND"/>
+      </cursor>
+   </Button>
+   <Button layoutX="32.0" layoutY="192.0" mnemonicParsing="false" onAction="#sumOnAction" prefHeight="61.0"
+           prefWidth="66.0" text="+">
+      <font>
+         <Font name="System Bold" size="28.0"/>
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND"/>
+      </cursor>
+   </Button>
+   <Button layoutX="130.0" layoutY="192.0" mnemonicParsing="false" onAction="#subOnAction" prefHeight="61.0"
+           prefWidth="66.0" text="-">
+      <font>
+         <Font name="System Bold" size="28.0"/>
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND"/>
+      </cursor>
+   </Button>
+   <Button layoutX="234.0" layoutY="192.0" mnemonicParsing="false" onAction="#divOnAction" prefHeight="61.0"
+           prefWidth="66.0" text="/">
+      <font>
+         <Font name="System Bold" size="28.0"/>
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND"/>
+      </cursor>
+   </Button>
+   <TextField fx:id="txtAnswer" layoutX="32.0" layoutY="314.0" prefHeight="48.0" prefWidth="360.0" promptText="Answer">
+      <font>
+         <Font name="System Bold" size="18.0"/>
+      </font>
+   </TextField>
+</AnchorPane>
